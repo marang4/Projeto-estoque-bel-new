@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface FerramentasRepository extends JpaRepository<Ferramentas, Long> {
+    Ferramentas findByCodBarras(Long codBarras);
 }

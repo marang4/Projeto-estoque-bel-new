@@ -9,7 +9,7 @@ public class Ferramentas {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
+    @Column(unique = true)
     private Long codBarras;
 
     @Column
